@@ -4,14 +4,16 @@ import robocode._
 class ThomasFirstScalaRobot extends Robot {
   override def run() {
     while (true) {
-      ahead(100)
-      turnGunRight(360)
-      back(100)
-      turnGunRight(360)
+      turnGunRight(170)
+      fire(2)
+      ahead(510)
+      turnGunRight(170)
+      fire(2)
+      back(510)
     }
   }
 
   override def onScannedRobot(e:ScannedRobotEvent) {
-    fire(1)
+    fire(2)
   }
 }
